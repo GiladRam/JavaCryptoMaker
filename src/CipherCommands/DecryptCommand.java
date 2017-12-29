@@ -36,7 +36,9 @@ public class DecryptCommand extends CipherCommand {
 
     }
 
-    private void readEncryptConfig() throws IOException {
+    private void readEncryptConfig()
+            throws
+            IOException {
         ObjectInputStream objectIn = null;
         FileInputStream fileIn = null;
         CommandLineUI.CommandPrintOut(
