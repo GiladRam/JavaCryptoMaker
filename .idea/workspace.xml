@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="121d620e-9a8b-4a37-ad0d-ffb2f14e1ff3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Q1-Commands" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/encrypted.txt" afterPath="$PROJECT_DIR$/encrypted.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/encryptionConfigOutPut.ser" afterPath="$PROJECT_DIR$/encryptionConfigOutPut.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CipherCommands/DecryptCommand.java" afterPath="$PROJECT_DIR$/src/CipherCommands/DecryptCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Decryption.properties" afterPath="$PROJECT_DIR$/Decryption.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Encryption.properties" afterPath="$PROJECT_DIR$/Encryption.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Q1_COMMANDS.txt" afterPath="$PROJECT_DIR$/Q1_COMMANDS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CipherCommands/CipherCommand.java" afterPath="$PROJECT_DIR$/src/CipherCommands/CipherCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utilities/CryptoUtill.java" afterPath="$PROJECT_DIR$/src/Utilities/CryptoUtill.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +21,68 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="EncryptConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utilities/EncryptConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CryptoUtill.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utilities/CryptoUtill.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#WriteCipherOutPut#0;class#CryptoUtill#0" expanded="false" />
+                <element signature="method#readCipherInputFromFile#0;class#CryptoUtill#0" expanded="false" />
+                <element signature="method#getByteArray#0;class#CryptoUtill#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Decryption.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Decryption.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Encryption.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Encryption.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CipherCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CipherCommands/CipherCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#readTargetFileContent#0;class#CipherCommand#0" expanded="false" />
+                <element signature="method#setCipherProvider#0;class#CipherCommand#0" expanded="false" />
+                <element signature="method#setSignatureProvider#0;class#CipherCommand#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,10 +175,11 @@
         <option value="$PROJECT_DIR$/src/Utill/FilesUtill.java" />
         <option value="$PROJECT_DIR$/src/Utill/CommandLineUI.java" />
         <option value="$PROJECT_DIR$/src/CipherCommands/EncryptCommand.java" />
-        <option value="$PROJECT_DIR$/Encryption.properties" />
-        <option value="$PROJECT_DIR$/src/CipherCommands/CipherCommand.java" />
-        <option value="$PROJECT_DIR$/Decryption.properties" />
         <option value="$PROJECT_DIR$/src/CipherCommands/DecryptCommand.java" />
+        <option value="$PROJECT_DIR$/Decryption.properties" />
+        <option value="$PROJECT_DIR$/src/Utilities/CryptoUtill.java" />
+        <option value="$PROJECT_DIR$/src/CipherCommands/CipherCommand.java" />
+        <option value="$PROJECT_DIR$/Encryption.properties" />
       </list>
     </option>
   </component>
@@ -164,6 +227,18 @@
               <item name="FileCryptoMaker" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ex3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileCryptoMaker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="CipherCommands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileCryptoMaker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -344,6 +419,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="24" width="1853" height="1056" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -358,7 +434,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -489,7 +565,6 @@
           <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getUserKeyStore#0;class#CryptoUtill#0" expanded="false" />
             <element signature="method#WriteCipherOutPut#0;class#CryptoUtill#0" expanded="false" />
             <element signature="method#readCipherInputFromFile#0;class#CryptoUtill#0" expanded="false" />
             <element signature="method#getByteArray#0;class#CryptoUtill#0" expanded="false" />
@@ -539,7 +614,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#readTargetFileContent#0;class#CipherCommand#0" expanded="false" />
-            <element signature="method#setKeyStore#0;class#CipherCommand#0" expanded="false" />
             <element signature="method#setCipherProvider#0;class#CipherCommand#0" expanded="false" />
             <element signature="method#setSignatureProvider#0;class#CipherCommand#0" expanded="false" />
           </folding>
@@ -596,7 +670,6 @@
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getUserKeyStore#0;class#CryptoUtill#0" expanded="false" />
             <element signature="method#WriteCipherOutPut#0;class#CryptoUtill#0" expanded="false" />
             <element signature="method#readCipherInputFromFile#0;class#CryptoUtill#0" expanded="false" />
             <element signature="method#getByteArray#0;class#CryptoUtill#0" expanded="false" />
@@ -690,6 +763,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="121" column="6" lean-forward="false" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -770,58 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utilities/CryptoUtill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getUserKeyStore#0;class#CryptoUtill#0" expanded="false" />
-            <element signature="method#WriteCipherOutPut#0;class#CryptoUtill#0" expanded="false" />
-            <element signature="method#readCipherInputFromFile#0;class#CryptoUtill#0" expanded="false" />
-            <element signature="method#getByteArray#0;class#CryptoUtill#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utilities/EncryptConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CipherCommands/CipherCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#readTargetFileContent#0;class#CipherCommand#0" expanded="false" />
-            <element signature="method#setKeyStore#0;class#CipherCommand#0" expanded="false" />
-            <element signature="method#setCipherProvider#0;class#CipherCommand#0" expanded="false" />
-            <element signature="method#setSignatureProvider#0;class#CipherCommand#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Encryption.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Decryption.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CipherCommands/EncryptCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
@@ -873,6 +895,56 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilities/CryptoUtill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#WriteCipherOutPut#0;class#CryptoUtill#0" expanded="false" />
+            <element signature="method#readCipherInputFromFile#0;class#CryptoUtill#0" expanded="false" />
+            <element signature="method#getByteArray#0;class#CryptoUtill#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Decryption.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilities/EncryptConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Encryption.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CipherCommands/CipherCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#readTargetFileContent#0;class#CipherCommand#0" expanded="false" />
+            <element signature="method#setCipherProvider#0;class#CipherCommand#0" expanded="false" />
+            <element signature="method#setSignatureProvider#0;class#CipherCommand#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

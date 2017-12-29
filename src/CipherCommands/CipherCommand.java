@@ -57,6 +57,7 @@ public abstract class CipherCommand {
             NoSuchAlgorithmException,
             NoSuchProviderException {
 
+        String keyStoreProvider = i_userConfiguration.getProperty("keyStoreProvider", "JKS");
         String cipherProvider = i_userConfiguration.getProperty("cipherProvider" , "SunJCE");
         String cipherTransformation = i_userConfiguration.getProperty("cipherTransformation", "AES/CBC/PKCS5Padding");
         String signatureProvider = i_userConfiguration.getProperty("signatureProvider", "SunRsaSign");
@@ -73,7 +74,7 @@ public abstract class CipherCommand {
         pm_key_pass = i_keypass;
 
         setCipherProvider(cipherProvider, cipherTransformation);
-        setKeyStore(i_keyStorePassword, keyStorePath);
+        setKeyStore(i_keyStorePassword,keyStoreProvider, keyStorePath);
         readTargetFileContent();
         setSignatureProvider(signatureAlgo, signatureProvider);
     }
@@ -84,6 +85,7 @@ public abstract class CipherCommand {
 
     private void setKeyStore(
             char[] i_keyStorePassword,
+            String i_keyStoreProvider,
             String i_keyStorePath)
             throws
             IOException,
@@ -91,7 +93,10 @@ public abstract class CipherCommand {
         CommandLineUI.CommandPrintOut(
                 enum_CipherModes.General.name(),
                 "Setting Key Store");
-        pm_KeyStore = CryptoUtill.getUserKeyStore(i_keyStorePath, i_keyStorePassword);
+        pm_KeyStore = CryptoUtill.getUserKeyStore(
+                i_keyStorePath,
+                i_keyStoreProvider,
+                i_keyStorePassword);
         CommandLineUI.CommandPrintOut(
                 enum_CipherModes.General.name(),
                 "Key Store was set successfully");

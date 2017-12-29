@@ -16,8 +16,13 @@ import java.util.ArrayList;
 public class CryptoUtill {
 
     public static KeyStore getUserKeyStore(
-            String i_keyStorePath, char[] i_keyStorePassword) throws KeyStoreException, IOException {
-        KeyStore keyStore = KeyStore.getInstance("JKS");
+            String i_keyStorePath,
+            String i_keyStoreProvider,
+            char[] i_keyStorePassword
+            ) throws
+            KeyStoreException,
+            IOException {
+        KeyStore keyStore = KeyStore.getInstance(i_keyStoreProvider);
 
         FileInputStream keyStoreFileInputStream = null;
         try {
