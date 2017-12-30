@@ -28,6 +28,8 @@ public abstract class CipherCommand {
     protected String pm_keyBAlias;
     protected String pm_keyEncryptionAlgorithm;
     protected String pm_targetFileDirectory;
+    protected String pm_keyGeneratorProvider;
+    protected String pm_encryptionConfigFile;
     protected byte[] pm_targetFileContent;
     protected char[] pm_key_pass;
     protected int pm_symmetricKeySize;
@@ -71,6 +73,8 @@ public abstract class CipherCommand {
         pm_targetFileDirectory = i_userConfiguration.getProperty("targetFileDirectory");
         pm_RNGAlgorithm = i_userConfiguration.getProperty("RNGAlgo", "SHA1PRNG");
         pm_SecureRandomProvider = i_userConfiguration.getProperty("SecureRandomProvider", "SUN");
+        pm_encryptionConfigFile = i_userConfiguration.getProperty("encryptionConfigFile", "./encryptionConfigOutPut.ser");
+        pm_keyGeneratorProvider = i_userConfiguration.getProperty("keyGeneratorProvider", "SunJCE");
         pm_key_pass = i_keypass;
 
         setCipherProvider(cipherProvider, cipherTransformation);

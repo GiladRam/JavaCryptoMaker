@@ -13,7 +13,6 @@ import java.util.Properties;
 public class EncryptCommand extends CipherCommand {
 
     protected static final String psf_outPutFile = "./encrypted.txt";
-    protected static final String psf_encryptionConfigOutPutFile = "./encryptionConfigOutPut.ser";
     protected IvParameterSpec pm_IV;
     protected SecretKey pm_symmetricKey;
 
@@ -101,7 +100,7 @@ public class EncryptCommand extends CipherCommand {
                 enum_CipherModes.Encryption.name(),
                 "Generating symmetric key...");
         SecureRandom random = getRandomness();
-        KeyGenerator keyGenerator = KeyGenerator.getInstance(pm_cipherAlgorithm);
+        KeyGenerator keyGenerator = KeyGenerator.getInstance(pm_cipherAlgorithm, pm_keyGeneratorProvider);
         keyGenerator.init(pm_symmetricKeySize, random);
         pm_symmetricKey = keyGenerator.generateKey();
     }
@@ -136,9 +135,9 @@ public class EncryptCommand extends CipherCommand {
             IOException {
         CommandLineUI.CommandPrintOut(
                 enum_CipherModes.Encryption.name(),
-                "Saving encryption configuration data in " + psf_encryptionConfigOutPutFile);
+                "Saving encryption configuration data in " + pm_encryptionConfigFile);
         FileOutputStream fileOut =
-                new FileOutputStream(psf_encryptionConfigOutPutFile);
+                new FileOutputStream(pm_encryptionConfigFile);
         ObjectOutputStream out = new ObjectOutputStream(fileOut);
         out.writeObject(pm_EncryptConfig);
         out.close();

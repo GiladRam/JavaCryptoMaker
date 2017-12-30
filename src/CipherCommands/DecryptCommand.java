@@ -44,10 +44,10 @@ public class DecryptCommand extends CipherCommand {
         CommandLineUI.CommandPrintOut(
                 enum_CipherModes.Decryption.name(),
                 "Reading encryption configuration file from "
-                        + EncryptCommand.psf_encryptionConfigOutPutFile);
+                        + pm_encryptionConfigFile);
         try{
 
-            fileIn = new FileInputStream(EncryptCommand.psf_encryptionConfigOutPutFile);
+            fileIn = new FileInputStream(pm_encryptionConfigFile);
             objectIn = new ObjectInputStream(fileIn);
             pm_EncryptConfig = (EncryptConfig) objectIn.readObject();
             objectIn.close();
