@@ -1,0 +1,31 @@
+
+--------------------- Create a KeyStore,generate private and public keys with a certificate -----------------------
+\
+keytool -genkeypair -dname "cn=ClientA, ou=Secure Apps, o=IDC, c=IL" \
+      -alias clienta  -keyalg RSA -sigalg SHA256withRSA -keysize 2048 \
+      -keystore "CLIENTA_ABSOLUTE_KEYSTORE_PATH.p12" -storetype PKCS12 \
+      -storepass CLIENTA_KEYSTOREPASS -validity 180
+
+-------------------- Exporte a certificate from a public key  (Client A key store) ----------------------
+
+  keytool -keystore CLIENTA_ABSOLUTE_KEYSTORE_PATH.p12 -exportcert -alias clienta -file clienta.cer
+
+--------------------- Create a KeyStore, generate private and public keys with a certificate -----------------------
+\
+keytool -genkeypair -dname "cn=ClientB, ou=Secure Apps, o=IDC, c=IL" \
+      -alias clientb  -keyalg RSA -sigalg SHA256withRSA -keysize 2048 \
+      -keystore "CLIENTB_ABSOLUTE_KEYSTORE_PATH.p12" -storetype PKCS12  \
+      -storepass CLIENTB_KEYSTOREPASS -validity 180
+
+
+-------------------- Exporte a certificate from a public key (Client B key store) ----------------------
+
+ keytool -keystore CLIENTB_ABSOLUTE_KEYSTORE_PATH.p12 -exportcert -alias clientb -file clientb.cer
+
+-------------------- Import certificate to keystore trusted store -------------------- 
+
+keytool -import -alias clientb -file clientb.cer -keystore CLIENTA_ABSOLUTE_KEYSTORE_PATH.p12 -storepass CLIENTA_KEYSTOREPASS
+
+-------------------- Import certificate to keystore trusted store -------------------- 
+
+keytool -import -alias clienta -file clienta.cer -keystore CLIENTB_ABSOLUTE_KEYSTORE_PATH.p12 -storepass CLIENTB_KEYSTOREPASS
