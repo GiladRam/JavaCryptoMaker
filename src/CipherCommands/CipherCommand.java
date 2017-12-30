@@ -57,7 +57,7 @@ public abstract class CipherCommand {
             NoSuchAlgorithmException,
             NoSuchProviderException {
 
-        String keyStoreProvider = i_userConfiguration.getProperty("keyStoreProvider", "JKS");
+        String keyStoreProvider = i_userConfiguration.getProperty("keyStoreProvider", "PKCS12");
         String cipherProvider = i_userConfiguration.getProperty("cipherProvider" , "SunJCE");
         String cipherTransformation = i_userConfiguration.getProperty("cipherTransformation", "AES/CBC/PKCS5Padding");
         String signatureProvider = i_userConfiguration.getProperty("signatureProvider", "SunRsaSign");

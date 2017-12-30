@@ -12,7 +12,7 @@ public class CommandLineUI {
     final String f_appTitle = "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n" +
             "________ File Crypto Maker _______" +
             "\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$";
-    final String f_loadingPropStr = "\n\tLoading configuration from %S...\n\n";
+    final String f_loadingPropStr = "\n\tLoading configuration from %s...\n\n";
     final String f_configFileNotFoundExceptio = "Could not find configuration file.\n %s";
 
     public void runUI(String i_UserCommand,
