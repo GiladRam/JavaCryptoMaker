@@ -28,4 +28,4 @@ keytool -import -alias clientb -file clientb.cer -keystore CLIENTA_ABSOLUTE_KEYS
 
 -------------------- Import certificate to keystore trusted store -------------------- 
 
-keytool -import -alias clienta -file clienta.cer -keystore CLIENTAB_ABSOLUTE_KEYSTORE_PATH.p12 -storepass CLIENTB_KEYSTOREPASS
+keytool -import -alias clienta -file clienta.cer -keystore CLIENTB_ABSOLUTE_KEYSTORE_PATH.p12 -storepass CLIENTB_KEYSTOREPASS
