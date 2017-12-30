@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="121d620e-9a8b-4a37-ad0d-ffb2f14e1ff3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Decryption.properties" afterPath="$PROJECT_DIR$/Decryption.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Encryption.properties" afterPath="$PROJECT_DIR$/Encryption.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/encrypted.txt" afterPath="$PROJECT_DIR$/encrypted.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/encryptionConfigOutPut.ser" afterPath="$PROJECT_DIR$/encryptionConfigOutPut.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CipherCommands/CipherCommand.java" afterPath="$PROJECT_DIR$/src/CipherCommands/CipherCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CipherCommands/DecryptCommand.java" afterPath="$PROJECT_DIR$/src/CipherCommands/DecryptCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CipherCommands/EncryptCommand.java" afterPath="$PROJECT_DIR$/src/CipherCommands/EncryptCommand.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FileCryptoMaker/Ex-ca/keystorea.pfx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FileCryptoMaker/Ex-ca/keystoreb.pfx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FileCryptoMaker/Ex-ca/clienta.cer" afterPath="$PROJECT_DIR$/out/production/FileCryptoMaker/Ex-ca/clienta.cer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FileCryptoMaker/Ex-ca/clientb.cer" afterPath="$PROJECT_DIR$/out/production/FileCryptoMaker/Ex-ca/clientb.cer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FileCryptoMaker/Decryption.properties" afterPath="$PROJECT_DIR$/out/production/FileCryptoMaker/Decryption.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FileCryptoMaker/Encryption.properties" afterPath="$PROJECT_DIR$/out/production/FileCryptoMaker/Encryption.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FileCryptoMaker/encrypted.txt" afterPath="$PROJECT_DIR$/out/production/FileCryptoMaker/encrypted.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FileCryptoMaker/encryptionConfigOutPut.ser" afterPath="$PROJECT_DIR$/out/production/FileCryptoMaker/encryptionConfigOutPut.ser" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
